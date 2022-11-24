@@ -3,6 +3,7 @@ title: "Historical horse population in Canada"
 output: 
   html_document:
     toc: TRUE
+bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -34,6 +35,8 @@ Horse population data were sourced from the [Government of Canada's Open Data we
 ## Methods
 
 The R programming language and the following R packages were used to perform the analysis: knitr and tidyverse. The code used to perform the analysis and create this report can be found here: <https://github.com/ttimbers/equine_numbers_value_canada_rmd>.
+
+[@tidy]
 
 ## Results
 
@@ -87,3 +90,6 @@ ggsave("province_plot.png")
 ```{r out.height="300px", out.width= "300px"}
 knitr::include_graphics("province_plot.png")
 ```
+
+## References
+
